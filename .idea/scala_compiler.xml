@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="ScalaWarehouse,scalawarehouse" />
+    <profile name="sbt 1" modules="scalawarehouse_9320" />
+    <profile name="sbt 2" modules="ScalaWarehouse">
+      <option name="higherKinds" value="true" />
+    </profile>
   </component>
 </project>
