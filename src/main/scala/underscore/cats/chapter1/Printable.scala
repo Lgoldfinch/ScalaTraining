@@ -5,13 +5,13 @@ trait Printable[A] {
 }
 
 object PrintableInstances {
-  implicit val stringWriter: Printable[String] =
+  implicit val stringPrintable: Printable[String] =
     (value: String) => value
 
-  implicit val intWriter: Printable[Int] =
+  implicit val intPrintable: Printable[Int] =
     (value: Int) => value.toString
 
-  implicit val catWriter: Printable[Cat] =
+  implicit val catPrintable: Printable[Cat] =
     (cat: Cat) => s"${cat.name} is a ${cat.age} ${cat.color} cat."
 }
 
